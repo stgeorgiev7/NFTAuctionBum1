@@ -1,0 +1,17 @@
+@use "../../styles/colors";
+
+.gridContainer {
+    background-color: colors.$background_paper;
+};
+
+.search {
+    background-color: colors.$background_default;
+    padding-left: 10px;
+    color: colors.$text_secondary;
+    border-radius: 20px;
+};
+
+.searchIcon {
+    color: colors.$text_primary;
+};
+
