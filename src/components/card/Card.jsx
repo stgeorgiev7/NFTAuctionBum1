@@ -8,7 +8,7 @@ import { CardMedia } from '@mui/material';
 import mediaImage from './image/nft.jpg';
 import millify from "millify";
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import Timer from '../Timer/Timer';
+import Timer from '../timer/Timer';
 
 export default function Card({ name, user, likes = 0, mediaUrl, price, currency, timeLeft = 0 }) {
 
