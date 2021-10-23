@@ -21,6 +21,7 @@ export default function Trending({ cards = [] }) {
                         mediaUrl={nft.mediaUrl}
                         price={nft.price}
                         currency={nft.currency}
+                        timeLeft={120}
                     >
                     </Card>
                 </Container >
@@ -30,7 +31,7 @@ export default function Trending({ cards = [] }) {
     });
 
     return (
-        <Grid container  className={classNames(styles.gridContainer)}>
+        <Grid container  className={classNames(styles.gridContainer)} className={classNames(styles.main)}>
 
             <Grid item xs={3} sm={3} md={3}
                 style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '30px'}}>
