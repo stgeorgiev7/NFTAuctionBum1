@@ -17,11 +17,11 @@ export default function Trending({ cards = [] }) {
                     <Card
                         name={nft.name}
                         user={nft.user}
-                        likes={0}
+                        likes={2500}
                         mediaUrl={nft.mediaUrl}
                         price={nft.price}
                         currency={nft.currency}
-                        timeLeft={120}
+                        timeLeft={0}
                     >
                     </Card>
                 </Container >
