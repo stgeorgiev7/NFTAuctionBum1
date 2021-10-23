@@ -8,8 +8,9 @@ import { CardHeader } from '@mui/material';
 import mediaImage from './image/nft.jpg';
 import millify from "millify";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import Countdown from 'react-countdown';
 
-export default function Card({ name, user, likes = 0, mediaUrl, price, currency }) {
+export default function Card({ name, user, likes = 0, mediaUrl, price, currency, timeLeft= 0 }) {
 
     const [img, setImage] = useState(mediaUrl ? mediaUrl : mediaImage.src);
     const [millifiedLikes, setLikes] = useState(millify(likes));
@@ -24,6 +25,7 @@ export default function Card({ name, user, likes = 0, mediaUrl, price, currency 
                 className={classNames(styles.cardImage)}>
 
             </CardMedia>
+            <Countdown data={Date.now() + timeLeft}/>
             <div className={classNames(styles.infoContainer)}>
                 <div>
                     <p className={classNames(styles.Card_title)}>{name}</p>
